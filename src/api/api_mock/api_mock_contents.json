@@ -1,0 +1,178 @@
+[
+	{
+	  "name": ".eslintrc.js",
+	  "path": ".eslintrc.js",
+	  "sha": "e3a4be98908693214b8b60b49b7ea2bc5df2c2f1",
+	  "size": 292,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/.eslintrc.js?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/blob/master/.eslintrc.js",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/e3a4be98908693214b8b60b49b7ea2bc5df2c2f1",
+	  "download_url": "https://raw.githubusercontent.com/Beatrizresteves/github_vuewer/master/.eslintrc.js",
+	  "type": "file",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/.eslintrc.js?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/e3a4be98908693214b8b60b49b7ea2bc5df2c2f1",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/blob/master/.eslintrc.js"
+	  }
+	},
+	{
+	  "name": ".github",
+	  "path": ".github",
+	  "sha": "84a4b2f94adae841adf633f3083520c856f6cd91",
+	  "size": 0,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/.github?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/tree/master/.github",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/trees/84a4b2f94adae841adf633f3083520c856f6cd91",
+	  "download_url": null,
+	  "type": "dir",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/.github?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/trees/84a4b2f94adae841adf633f3083520c856f6cd91",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/tree/master/.github"
+	  }
+	},
+	{
+	  "name": ".gitignore",
+	  "path": ".gitignore",
+	  "sha": "403adbc1e527906a4aa59558cd582c20bcd1d738",
+	  "size": 231,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/.gitignore?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/blob/master/.gitignore",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/403adbc1e527906a4aa59558cd582c20bcd1d738",
+	  "download_url": "https://raw.githubusercontent.com/Beatrizresteves/github_vuewer/master/.gitignore",
+	  "type": "file",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/.gitignore?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/403adbc1e527906a4aa59558cd582c20bcd1d738",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/blob/master/.gitignore"
+	  }
+	},
+	{
+	  "name": "README.md",
+	  "path": "README.md",
+	  "sha": "50ff651d941293c9ef2bf20b95eead7b216eeac5",
+	  "size": 325,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/README.md?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/blob/master/README.md",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/50ff651d941293c9ef2bf20b95eead7b216eeac5",
+	  "download_url": "https://raw.githubusercontent.com/Beatrizresteves/github_vuewer/master/README.md",
+	  "type": "file",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/README.md?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/50ff651d941293c9ef2bf20b95eead7b216eeac5",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/blob/master/README.md"
+	  }
+	},
+	{
+	  "name": "babel.config.js",
+	  "path": "babel.config.js",
+	  "sha": "e9558405fdcc02f12d757acb308e02937a7444f1",
+	  "size": 73,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/babel.config.js?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/blob/master/babel.config.js",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/e9558405fdcc02f12d757acb308e02937a7444f1",
+	  "download_url": "https://raw.githubusercontent.com/Beatrizresteves/github_vuewer/master/babel.config.js",
+	  "type": "file",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/babel.config.js?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/e9558405fdcc02f12d757acb308e02937a7444f1",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/blob/master/babel.config.js"
+	  }
+	},
+	{
+	  "name": "jsconfig.json",
+	  "path": "jsconfig.json",
+	  "sha": "4aafc5f6ed86fe6dff8d4b6be59290cbdeb61656",
+	  "size": 279,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/jsconfig.json?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/blob/master/jsconfig.json",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/4aafc5f6ed86fe6dff8d4b6be59290cbdeb61656",
+	  "download_url": "https://raw.githubusercontent.com/Beatrizresteves/github_vuewer/master/jsconfig.json",
+	  "type": "file",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/jsconfig.json?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/4aafc5f6ed86fe6dff8d4b6be59290cbdeb61656",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/blob/master/jsconfig.json"
+	  }
+	},
+	{
+	  "name": "package-lock.json",
+	  "path": "package-lock.json",
+	  "sha": "4ca4ee81d1cc21eeb733021f32df18cb514c778b",
+	  "size": 444138,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/package-lock.json?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/blob/master/package-lock.json",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/4ca4ee81d1cc21eeb733021f32df18cb514c778b",
+	  "download_url": "https://raw.githubusercontent.com/Beatrizresteves/github_vuewer/master/package-lock.json",
+	  "type": "file",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/package-lock.json?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/4ca4ee81d1cc21eeb733021f32df18cb514c778b",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/blob/master/package-lock.json"
+	  }
+	},
+	{
+	  "name": "package.json",
+	  "path": "package.json",
+	  "sha": "0152201b19d0bfd5358b452c5ff2efd00619e1a6",
+	  "size": 1057,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/package.json?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/blob/master/package.json",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/0152201b19d0bfd5358b452c5ff2efd00619e1a6",
+	  "download_url": "https://raw.githubusercontent.com/Beatrizresteves/github_vuewer/master/package.json",
+	  "type": "file",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/package.json?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/0152201b19d0bfd5358b452c5ff2efd00619e1a6",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/blob/master/package.json"
+	  }
+	},
+	{
+	  "name": "public",
+	  "path": "public",
+	  "sha": "8c6d5f08cf09ec8ff72e04d7d73678db36fdf937",
+	  "size": 0,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/public?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/tree/master/public",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/trees/8c6d5f08cf09ec8ff72e04d7d73678db36fdf937",
+	  "download_url": null,
+	  "type": "dir",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/public?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/trees/8c6d5f08cf09ec8ff72e04d7d73678db36fdf937",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/tree/master/public"
+	  }
+	},
+	{
+	  "name": "src",
+	  "path": "src",
+	  "sha": "1cfed889fab5d7875ef3b99723d18b20b948641a",
+	  "size": 0,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/src?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/tree/master/src",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/trees/1cfed889fab5d7875ef3b99723d18b20b948641a",
+	  "download_url": null,
+	  "type": "dir",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/src?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/trees/1cfed889fab5d7875ef3b99723d18b20b948641a",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/tree/master/src"
+	  }
+	},
+	{
+	  "name": "vue.config.js",
+	  "path": "vue.config.js",
+	  "sha": "45d55396c6985a7ce750f62ba7bf4de4a9f4049a",
+	  "size": 416,
+	  "url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/vue.config.js?ref=master",
+	  "html_url": "https://github.com/Beatrizresteves/github_vuewer/blob/master/vue.config.js",
+	  "git_url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/45d55396c6985a7ce750f62ba7bf4de4a9f4049a",
+	  "download_url": "https://raw.githubusercontent.com/Beatrizresteves/github_vuewer/master/vue.config.js",
+	  "type": "file",
+	  "_links": {
+		"self": "https://api.github.com/repos/Beatrizresteves/github_vuewer/contents/vue.config.js?ref=master",
+		"git": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/45d55396c6985a7ce750f62ba7bf4de4a9f4049a",
+		"html": "https://github.com/Beatrizresteves/github_vuewer/blob/master/vue.config.js"
+	  }
+	}
+]

@@ -30,5 +30,12 @@ export const api = {
         const url = `https://api.github.com/repos/${owner}/${name}/issues?page=${page}`
         const response = await fetch(url)
         return await response.json()
+    },
+    async listaFiles(name) {
+        // const url = `https://api.github.com/repos/${owner}/REPO/contents/`
+        // const response = await fetch(url)
+        // return await response.json()
+        const url = require("@/api/api_mock/api_mock_contents.json")
+        return url
     }
 }

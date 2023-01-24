@@ -1,0 +1,27 @@
+{
+	"total_count": 1,
+	"incomplete_results": false,
+	"items": [
+	  {
+		"login": "Beatrizresteves",
+		"id": 101004042,
+		"node_id": "U_kgDOBgUzCg",
+		"avatar_url": "https://avatars.githubusercontent.com/u/101004042?v=4",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/Beatrizresteves",
+		"html_url": "https://github.com/Beatrizresteves",
+		"followers_url": "https://api.github.com/users/Beatrizresteves/followers",
+		"following_url": "https://api.github.com/users/Beatrizresteves/following{/other_user}",
+		"gists_url": "https://api.github.com/users/Beatrizresteves/gists{/gist_id}",
+		"starred_url": "https://api.github.com/users/Beatrizresteves/starred{/owner}{/repo}",
+		"subscriptions_url": "https://api.github.com/users/Beatrizresteves/subscriptions",
+		"organizations_url": "https://api.github.com/users/Beatrizresteves/orgs",
+		"repos_url": "https://api.github.com/users/Beatrizresteves/repos",
+		"events_url": "https://api.github.com/users/Beatrizresteves/events{/privacy}",
+		"received_events_url": "https://api.github.com/users/Beatrizresteves/received_events",
+		"type": "User",
+		"site_admin": false,
+		"score": 1.0
+	  }
+	]
+}
