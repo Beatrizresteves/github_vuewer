@@ -1,0 +1,15 @@
+{
+	"sha": "d45d4ef50cab117fd0552ba5c87fdb91480ee750",
+	"url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/trees/d45d4ef50cab117fd0552ba5c87fdb91480ee750",
+	"tree": [
+	  {
+		"path": "ghpages.yml",
+		"mode": "100644",
+		"type": "blob",
+		"sha": "817c1a315be0cf5af25636549705fa646a528406",
+		"size": 397,
+		"url": "https://api.github.com/repos/Beatrizresteves/github_vuewer/git/blobs/817c1a315be0cf5af25636549705fa646a528406"
+	  }
+	],
+	"truncated": false
+  }

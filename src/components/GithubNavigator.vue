@@ -23,139 +23,98 @@
             <v-icon>mdi-view-module</v-icon>
           </v-btn>
           <template v-slot:extension>
-            <!-- <v-btn
-              fab
-              color="cyan accent-2"
-              bottom
-              left
-              absolute
-              @click="dialog = !dialog"
-            >
-              <v-icon>mdi-plus</v-icon>
-            </v-btn> -->
           </template>
         </v-toolbar>
         <v-list
           two-line
           subheader
         >
-          <v-subheader inset>
-            Pastas
-          </v-subheader>
-
           <v-list-item
-            v-for="item in fileslist"
+            v-for="item in totalfiles"
             :key="item.name"
-            link
+            @click="listaFileFolders(item)"
           >
-            <v-list-item-avatar>
-              <v-icon :class="[item.iconClass]">
-                {{ item.icon }}
-              </v-icon>
-            </v-list-item-avatar>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ item.name }}</v-list-item-title>
-            </v-list-item-content>
-
-            <v-list-item-action>
-              <v-btn icon>
-                <v-icon color="grey lighten-1">
-                  mdi-information
-                </v-icon>
-              </v-btn>
-            </v-list-item-action>
-          </v-list-item>
-
-          <v-divider inset></v-divider>
-
-          <v-subheader inset>
-            Arquivos
-          </v-subheader>
-
-          <v-list-item
-            v-for="item in items2"
-            :key="item.title"
-            link
-          >
-            <v-list-item-avatar>
-              <v-icon :class="[item.iconClass]">
-                {{ item.icon }}
-              </v-icon>
-            </v-list-item-avatar>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-              <v-list-item-title>{{ item.type }}</v-list-item-title>
-
-              <v-list-item-subtitle>{{ item.subtitle }}</v-list-item-subtitle>
-            </v-list-item-content>
-
-            <v-list-item-action>
-              <v-btn
-                icon
-                ripple
-              >
-                <v-icon color="grey lighten-1">
-                  mdi-information
-                </v-icon>
-              </v-btn>
-            </v-list-item-action>
+            <GithubNavigatorFiles :item="item"/>
           </v-list-item>
         </v-list>
-
-        <v-dialog
-          v-model="dialog"
-          max-width="500px"
-        >
-          <v-card>
-            <v-card-text>
-              <v-text-field label="File name"></v-text-field>
-
-              <small class="grey--text">* This doesn't actually save.</small>
-            </v-card-text>
-
-            <v-card-actions>
-              <v-spacer></v-spacer>
-
-              <v-btn
-                text
-                color="#EEFF41"
-                @click="dialog = false"
-              >
-                Submit
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
       </v-card>
     </v-col>
   </v-row>
 </template>
 <script>
 import {api} from '~api'
+import GithubNavigatorFiles from './GithubNavigatorFiles'
 export default {
+  components: {
+      GithubNavigatorFiles
+    },
   props: ['repo'],
   data: () => ({
     files: null,
     folders: null,
     fileslist: [],
     folderslist: [],
-    typefile: null,
-     
-	}),
+    typefile: "",
+    icon: "",
+    iconClass: "",
+    totalfiles: [],
+    currentPath: '',
+  }),
 	methods: {
 		async listaArquivos(){
 			const data = await api.lista_repos(this.user)
 		},
+    updateType() {
+      this.typefile = this.listaFiles.type
+      if (this.typefile == 'file'){
+        this.icon == 'mdi-clipboard-text'
+        this.iconClass == 'grey lighten-1 white--text'
+      }
+      else {
+        this.icon == 'mdi-folder'
+        this.iconClass == 'blue white--text'
+      }
+    },
+    async listaFileFolders(item) {
+      if (item.type == "file") {
+        console.log("não faz nada")
+      }
+      else {
+        this.currentPath = item.path
+        this.totalfiles = await api.listaFiles(this.repo.owner.login, this.repo.name, this.currentPath)
+      }
+    }
 	},
   watch: {
     async repo(){
-      this.fileslist = await api.listaFiles(this.repo.name)
-      this.typefile = await api.listaFiles(this.repo.type)
+      this.totalfiles = await api.listaFiles(this.repo.owner.login, this.repo.name)
+      // for (let i=0; i < this.totalfiles.length; i++) {
+      //   if (this.totalfiles[i].type == "file"){
+      //     this.fileslist.push(this.totalfiles[i])
+      //   }
+      //   else {
+      //     this.folderslist.push(this.totalfiles[i])
+      //     // this.listaFileFolders()
+      //   }
+      // }
     },
+    item () {
+        this.$emit('reposelected', this.item)
+  },
+  currentPath (newValue, old) {
+    console.log(newValue, old)
   }
 
+// async repo(){
+//       this.files = await api.listaFiles(this.repo.name)
+//       this.typefile = await api.listaFiles(this.repo.type)
+//         if (this.files.type == "file") {
+//           this.fileslist.push(this.files.name)
+//           this.icon == 'mdi-clipboard-text'
+//         }
+//         else {
+//           this.folderslist.push(this.files.name)
+//           this.icon == 'mdi-folder'
 
     //   return {
     //     dialog: false,
@@ -171,4 +130,5 @@ export default {
     //   }
     // },
   }
+}
 </script>
