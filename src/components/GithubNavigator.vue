@@ -24,6 +24,7 @@
           </v-btn>
           <template v-slot:extension>
           </template>
+          <v-btn @click="returnFolder">Voltar</v-btn>
         </v-toolbar>
         <v-list
           two-line
@@ -59,6 +60,23 @@ export default {
     iconClass: "",
     totalfiles: [],
     currentPath: '',
+    items: [
+        {
+          text: 'Início',
+          disabled: false,
+          href: null,
+        },
+        {
+          text: '',
+          disabled: false,
+          href: 'breadcrumbs_link_1'
+        },
+        {
+          text: '',
+          disabled: true,
+          href: 'breadcrumbs_link_2'
+        }
+      ]
   }),
 	methods: {
 		async listaArquivos(){
@@ -82,7 +100,23 @@ export default {
       else {
         this.currentPath = item.path
         this.totalfiles = await api.listaFiles(this.repo.owner.login, this.repo.name, this.currentPath)
+        this.items[1].text = item.name
       }
+    },
+    async returnFolder(){
+      this.totalfiles = await api.listaFiles(this.repo.owner.login, this.repo.name)
+       // let paths = this.currentPath.split("/")
+      // let updatepaths = this.paths.pop("")
+      // let lastPath = updatepaths[updatepaths.length-1]
+      // console.log(paths[paths.length-1])
+      // // this.totalfiles = this.totalfiles.replace(lastPath, "")
+      // // this.totalfiles = this.totalfiles.relice(lastPath, "")
+      // this.currentPath = this.currentPath.replace(lastPath, "")
+      // this.totalfiles = await api.listaFiles(this.repo.owner.login, this.repo.name, this.currentPath)
+      // //this.totalfiles = await api.listaFiles(this.repo.owner.login, this.repo.name, this.currentPath[-1])
+      // //let indexFolder = this.totalfiles.indexOf(this.currentPath)
+      // // this.totalfiles = this.totalfiles.splice(this.item)
+      // debugger
     }
 	},
   watch: {
