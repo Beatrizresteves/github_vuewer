@@ -108,15 +108,6 @@ export default {
   watch: {
     async repo(){
       this.totalfiles = await api.listaFiles(this.repo.owner.login, this.repo.name)
-      // for (let i=0; i < this.totalfiles.length; i++) {
-      //   if (this.totalfiles[i].type == "file"){
-      //     this.fileslist.push(this.totalfiles[i])
-      //   }
-      //   else {
-      //     this.folderslist.push(this.totalfiles[i])
-      //     // this.listaFileFolders()
-      //   }
-      // }
     },
     item () {
         this.$emit('reposelected', this.item)
