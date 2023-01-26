@@ -13,22 +13,16 @@
         >
           <v-app-bar-nav-icon></v-app-bar-nav-icon>
           <v-toolbar-title class="white--text">
-            Meus arquivos
+            {{ title }}
           </v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn icon>
-            <v-icon>mdi-magnify</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon>mdi-view-module</v-icon>
-          </v-btn>
-          <template v-slot:extension>
-          </template>
+          <!-- <template v-slot:extension>
+          </template> -->
           <v-btn @click="returnFolder">Voltar</v-btn>
         </v-toolbar>
         <v-list
           two-line
-          subheader
+          
         >
           <v-list-item
             v-for="item in totalfiles"
@@ -36,6 +30,8 @@
             @click="listaFileFolders(item)"
           >
             <GithubNavigatorFiles :item="item"/>
+            <v-icon v-if="item.type==='file'"> {{ icon_file }} </v-icon>
+            <v-icon v-else> {{ icon_folder }} </v-icon>
           </v-list-item>
         </v-list>
       </v-card>
@@ -52,11 +48,12 @@ export default {
   props: ['repo'],
   data: () => ({
     files: null,
+    title: "Meus Arquivos",
     folders: null,
     fileslist: [],
     folderslist: [],
-    typefile: "",
-    icon: "",
+    icon_folder: 'mdi-folder',
+    icon_file: 'mdi-clipboard-text',
     iconClass: "",
     totalfiles: [],
     currentPath: '',
@@ -82,17 +79,6 @@ export default {
 		async listaArquivos(){
 			const data = await api.lista_repos(this.user)
 		},
-    updateType() {
-      this.typefile = this.listaFiles.type
-      if (this.typefile == 'file'){
-        this.icon == 'mdi-clipboard-text'
-        this.iconClass == 'grey lighten-1 white--text'
-      }
-      else {
-        this.icon == 'mdi-folder'
-        this.iconClass == 'blue white--text'
-      }
-    },
     async listaFileFolders(item) {
       if (item.type == "file") {
         console.log("não faz nada")
@@ -100,7 +86,7 @@ export default {
       else {
         this.currentPath = item.path
         this.totalfiles = await api.listaFiles(this.repo.owner.login, this.repo.name, this.currentPath)
-        this.items[1].text = item.name
+        this.title = item.name
       }
     },
     async returnFolder(){
@@ -139,17 +125,6 @@ export default {
     console.log(newValue, old)
   }
 
-// async repo(){
-//       this.files = await api.listaFiles(this.repo.name)
-//       this.typefile = await api.listaFiles(this.repo.type)
-//         if (this.files.type == "file") {
-//           this.fileslist.push(this.files.name)
-//           this.icon == 'mdi-clipboard-text'
-//         }
-//         else {
-//           this.folderslist.push(this.files.name)
-//           this.icon == 'mdi-folder'
-
     //   return {
     //     dialog: false,
     //     items: [
@@ -165,4 +140,5 @@ export default {
     // },
   }
 }
+
 </script>
